@@ -1,0 +1,5 @@
+string (TIMESTAMP MY_TIMESTAMP "%Y-%m-%d-%H-%M-%S")
+execute_process (COMMAND C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/cmake.exe --build "C:/Users/iftah/source/repos/oop2_project-/out/build/x64-Debug" --target package_source)
+execute_process (COMMAND C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/cmake.exe -E copy "C:/Users/iftah/source/repos/oop2_project-/out/build/x64-Debug/oop2_project-Alexey_Laikov-Talia_Barzilai-Iftah_Ohayon.zip" "C:/Users/iftah/source/repos/oop2_project-Alexey_Laikov-Talia_Barzilai-Iftah_Ohayon-${MY_TIMESTAMP}.zip")
+execute_process (COMMAND C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/cmake.exe -E echo "")
+execute_process (COMMAND C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/cmake.exe -E echo "***" C:/Users/iftah/source/repos/oop2_project-Alexey_Laikov-Talia_Barzilai-Iftah_Ohayon-${MY_TIMESTAMP}.zip "file created ***")
